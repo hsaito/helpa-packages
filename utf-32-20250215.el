@@ -147,6 +147,90 @@
   :pre-write-conversion 'utf-32le-unix-pre-write-conversion
   :post-read-conversion 'utf-32le-unix-post-read-conversion)
 
+;;;###autoload
+(define-coding-system 'utf-32be-with-signature-dos
+  "UTF-32 (big endian)"
+  :coding-type 'utf-16
+  :mnemonic ?U
+  :eol-type 'dos
+  :charset-list '(unicode)
+  :pre-write-conversion 'utf-32-be-unix-pre-write-conversion
+  :post-read-conversion 'utf-32-be-unix-post-read-conversion)
+
+;;;###autoload
+(define-coding-system 'utf-32le-with-signature-dos
+  "UTF-32 (little endian)"
+  :coding-type 'utf-16
+  :endian 'little
+  :mnemonic ?U
+  :eol-type 'dos
+  :charset-list '(unicode)
+  :pre-write-conversion 'utf-32-le-unix-pre-write-conversion
+  :post-read-conversion 'utf-32-le-unix-post-read-conversion)
+
+;;;###autoload
+(define-coding-system 'utf-32be-dos
+  "UTF-32 (big endian) without BOM"
+  :coding-type 'utf-16
+  :mnemonic ?U
+  :eol-type 'dos
+  :charset-list '(unicode)
+  :pre-write-conversion 'utf-32be-unix-pre-write-conversion
+  :post-read-conversion 'utf-32be-unix-post-read-conversion)
+
+;;;###autoload
+(define-coding-system 'utf-32le-dos
+  "UTF-32 (little endian) without BOM"
+  :coding-type 'utf-16
+  :endian 'little
+  :mnemonic ?U
+  :eol-type 'dos
+  :charset-list '(unicode)
+  :pre-write-conversion 'utf-32le-unix-pre-write-conversion
+  :post-read-conversion 'utf-32le-unix-post-read-conversion)
+
+;;;###autoload
+(define-coding-system 'utf-32be-with-signature-mac
+  "UTF-32 (big endian)"
+  :coding-type 'utf-16
+  :mnemonic ?U
+  :eol-type 'mac
+  :charset-list '(unicode)
+  :pre-write-conversion 'utf-32-be-unix-pre-write-conversion
+  :post-read-conversion 'utf-32-be-unix-post-read-conversion)
+
+;;;###autoload
+(define-coding-system 'utf-32le-with-signature-mac
+  "UTF-32 (little endian)"
+  :coding-type 'utf-16
+  :endian 'little
+  :mnemonic ?U
+  :eol-type 'mac
+  :charset-list '(unicode)
+  :pre-write-conversion 'utf-32-le-unix-pre-write-conversion
+  :post-read-conversion 'utf-32-le-unix-post-read-conversion)
+
+;;;###autoload
+(define-coding-system 'utf-32be-mac
+  "UTF-32 (big endian) without BOM"
+  :coding-type 'utf-16
+  :mnemonic ?U
+  :eol-type 'mac
+  :charset-list '(unicode)
+  :pre-write-conversion 'utf-32be-unix-pre-write-conversion
+  :post-read-conversion 'utf-32be-unix-post-read-conversion)
+
+;;;###autoload
+(define-coding-system 'utf-32le-mac
+  "UTF-32 (little endian) without BOM"
+  :coding-type 'utf-16
+  :endian 'little
+  :mnemonic ?U
+  :eol-type 'mac
+  :charset-list '(unicode)
+  :pre-write-conversion 'utf-32le-unix-pre-write-conversion
+  :post-read-conversion 'utf-32le-unix-post-read-conversion)
+
 (provide 'utf-32)
 
 ;;; utf-32.el ends here
