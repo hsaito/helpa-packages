@@ -3,10 +3,9 @@
  (create-random-buffer . [(20141017) nil "Creates an empty buffer with random numbered name." single])
  (org-mode-aux . [(20141017) nil "Org Auxiliary Functions for HTML validation link" single])
  (sanitize . [(20141017) nil "A simple script that sanitizes text" single])
- (utf-32 . [(20141019) nil "UTF-32 Support for Emacs" single])
+ (utf-32 . [(20250215) nil "UTF-32 Support for Emacs" single])
  (uuid . [(20141017) nil "UUID Generation Script" single])
  (dmacro . [(20160216) nil "Dynamic Macro" single])
- (highutf . [(20190709) nil "UTF-64, UTF-128, UTF-384, UTF-512 support for Emacs (Joke)" single])
  (insert-zero-width-space . [(20190719) nil "Insert zero-width space." single])
  )
    	   
